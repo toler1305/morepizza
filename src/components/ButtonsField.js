@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React, {useState, useRef} from 'react'
 import MoreButton from './MoreButton.js';
 
 function ButtonsField({onMore}) {
@@ -14,7 +14,7 @@ function ButtonsField({onMore}) {
 
         //Change poses touching clicked pos
         poses.forEach(p => {
-            if (p != cPos) {
+            if (p !== cPos) {
                 let isTouching = false;
                 const din = getRandomInt(1,6)
                 const h = 50*din / divRef.current.offsetHeight * 100
