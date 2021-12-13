@@ -1,0 +1,54 @@
+body {
+    background-color: teal;
+    overflow: hidden;
+}
+
+.moreButton {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-top: 25px;
+    margin-left: 45px;
+    filter: blur(6px);
+    opacity: 0px;
+    color: transparent;
+
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0, 0.2);
+}
+
+.moreButton:hover {
+    
+    background-color: lightgray
+}
+
+
+.moreButtonAfterLoad {
+    transition:  all .4s cubic-bezier(0,1,1,1);
+    width: 100px;
+    height: 50px;
+    margin: 0px;
+    filter: blur(0);
+    opacity: 1;
+    color: black;
+}
+
+
+
+.ButtonsField {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 110px);
+    height: calc(100% - 50px);
+}
+
+h1 {
+    display: absolute;
+    text-align: center;
+    line-height: 80vh;
+    
+    color: white;
+    text-shadow: 0px 10px 20px rgba(0,0,0, 0.5);
+}
